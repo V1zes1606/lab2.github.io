@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>LAB 1</title>
+    </head>
+
+    <body>
+        <h1>LAB 1:</h1>
+        <ul>
+            <li><a href="http://kubsu.ru">Сайт Кубанского государственного университета</a></li>
+            <li><a href="https://kubsu.ru">Сайт Кубанского государственного университета в протоколе https</a></li>
+            <li><a href="https://kubsu.ru"><img src="image.jpg" alt="Цветок" width="200" height="200"></a></li>
+            <li><a href="education/programs">Сокращенная ссылка на внутреннюю страницу</a></li>
+            <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+            <li><a href="#biography">Ссылка на фрагмент текущей страницы</a></li>
+            <li><a href="https://kubsu.ru">Ссылка с тремя параметрами</a></li>
+            <li><a href="https://kubsu.ru">Ссылка с параметром id</a></li>
+            <li><a href="./page.html">Относительная ссылка в текущем каталоге</a></li>
+            <li><a href="about/page.html">Относительная в каталоге about</a></li>
+            <li><a href="../page.html">Относительная в каталоге уровнем выше текущего</a></li>
+            <li><a href="../../page.html">Относительная на два уровня выше</a></li>
+            <li><p>Переход на <a href="https://kubsu.ru">сайт КубГУ</a> по данной ссылке</p></li>
+            <li><a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D1%82%D0%B2%D0%B0_%D0%BD%D0%B0_%D0%9A%D0%B0%D0%BB%D0%BA%D0%B5">Ссылка на фрагмент страницы стороннего сайта</a></li>
+            <li>
+                <img src="image.jpg" alt="Карта" usemap="#mymap" width="300" height="150">
+                <map name="mymap">
+                    <area shape="rect" coords="0,0,100,100" href="https://kubsu.ru" alt="Прямоугольник">
+                    <area shape="circle" coords="200,75,50" href="https://kubsu.ru" alt="Круг">
+                </map>
+            </li>
+            <li><a href="">Ссылка с пустым href</a></li>
+            <li><a>Ссылка без атрибута href</a></li>
+            <li><a href="https://kubsu.ru" rel="nofollow">Ссылка, по которой роботы не переходят</a></li>
+            <li><a href="https://kubsu.ru" rel="noindex nofollow">Запрещено для indexing поисковиками</a></li>
+            <li>
+                <ol>
+                    <li><a href="https://kubsu.ru" title="Главная КубГУ">Ссылка 1</a></li>
+                    <li><a href="https://kubsu.ru" title="Образование в КубГУ">Ссылка 2</a></li>
+                </ol>
+            </li>
+            <li><a href="ftp://user:password@://example.com">Ссылка на файл на сервере FTP с авторизацией</a></li>
+        </ul>
+        <h2>Форма обратной связи</h2>
+        <form action="#" method="post">
+            <p>
+                <label for="fio">ФИО:</label><br>
+                <input type="text" id="fio" name="fio" required>
+            </p>
+            
+            <p>
+                <label for="phone">Телефон:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="+7 (999) 999-99-99" required>
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="birthday">Дата рождения:</label><br>
+                <input type="date" id="birthday" name="birthday" required>
+            </p>
+
+            <p>
+                Пол:<br>
+                <label><input type="radio" name="gender" value="male" checked> Мужской</label><br>
+                <label><input type="radio" name="gender" value="female"> Женский</label>
+            </p>
+
+            <p>
+                <label for="languages">Любимый язык программирования (можно выбрать несколько с Ctrl):</label><br>
+                <select id="languages" name="languages[]" multiple size="11" required>
+                    <option value="pascal">Pascal</option>
+                    <option value="c">C</option>
+                    <option value="cplusplus">C++</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="php">PHP</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="haskel">Haskel</option>
+                    <option value="clojure">Clojure</option>
+                    <option value="prolog">Prolog</option>
+                    <option value="scala">Scala</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="biography">Биография:</label><br>
+                <textarea id="biography" name="biography" rows="5" cols="40" required></textarea>
+            </p>
+
+            <p>
+                <label>
+                    <input type="checkbox" name="contract" value="agreed" required> 
+                    С контрактом ознакомлен(а)
+                </label>
+            </p>
+
+            <p>
+                <button type="submit">Сохранить</button>
+            </p>
+        </form>
+    </body>
+</html>
