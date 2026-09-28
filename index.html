@@ -26,31 +26,37 @@
     <main class="centered-content">
         
         <section class="content-section">
-            <h2>Список гиперссылок</h2>
+            <h2>Список гиперссылок и медиафайлы</h2>
             <ul>
                 <li><a href="http://kubsu.ru">Сайт Кубанского государственного университета</a></li>
                 <li><a href="https://kubsu.ru">Сайт Кубанского государственного университета в протоколе https</a></li>
-                <li><a href="flower.html">Цветок</a></li>
-                <li><a href="/inner.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+                <li><a href="https://kubsu.ru"><img src="image.jpg" alt="Цветок" width="200" height="200"></a></li>
+                <li><a href="education/programs">Сокращенная ссылка на внутреннюю страницу</a></li>
                 <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
-                <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
-                <li><a href="search.php?p1=1&amp;p2=2&amp;p3=3">Ссылка с тремя параметрами</a></li>
-                <li><a href="page.php?id=123">Ссылка с параметром id</a></li>
-                <li><a href="local.html">Относительная ссылка в текущем каталоге</a></li>
-                <li><a href="about/info.html">Относительная в каталоге about</a></li>
-                <li><a href="../prev.html">Относительная в каталоге уровнем выше текущего</a></li>
-                <li><a href="../../root.html">Относительная на два уровня выше</a></li>
-                <li><a href="http://kubsu.ru">Переход на сайт КубГУ по данной ссылке</a></li>
-                <li><a href="https://example.com#section">Ссылка на фрагмент страницы стороннего сайта</a></li>
-                <li><a href="map.html">Карта</a></li>
+                <li><a href="#biography">Ссылка на фрагмент текущей страницы</a></li>
+                <li><a href="https://kubsu.ru">Ссылка с тремя параметрами</a></li>
+                <li><a href="https://kubsu.ru">Ссылка с параметром id</a></li>
+                <li><a href="./page.html">Относительная ссылка в текущем каталоге</a></li>
+                <li><a href="about/page.html">Относительная в каталоге about</a></li>
+                <li><a href="../page.html">Относительная в каталоге уровнем выше текущего</a></li>
+                <li><a href="../../page.html">Относительная на два уровня выше</a></li>
+                <li><p>Переход на <a href="https://kubsu.ru">сайт КубГУ</a> по данной ссылке</p></li>
+                <li><a href="https://wikipedia.org">Ссылка на фрагмент страницы стороннего сайта</a></li>
+                <li>
+                    <img src="image.jpg" alt="Карта" usemap="#mymap" width="300" height="150">
+                    <map name="mymap">
+                        <area shape="rect" coords="0,0,100,150" href="https://kubsu.ru" alt="Прямоугольная область КубГУ">
+                        <area shape="circle" coords="200,75,50" href="https://kubsu.ru" alt="Круглая область КубГУ">
+                    </map>
+                </li>
                 <li><a href="">Ссылка с пустым href</a></li>
                 <li><a>Ссылка без атрибута href</a></li>
-                <li><a href="https://example.com" rel="nofollow">Ссылка, по которой роботы не переходят</a></li>
-                <li><a href="https://example.com">Запрещено для indexing поисковиками</a></li>
+                <li><a href="https://kubsu.ru" rel="nofollow">Ссылка, по которой роботы не переходят</a></li>
+                <li><a href="https://kubsu.ru" rel="noindex nofollow">Запрещено для indexing поисковиками</a></li>
                 <li>
                     <ol>
-                        <li><a href="#">Ссылка 1</a></li>
-                        <li><a href="#">Ссылка 2</a></li>
+                        <li><a href="https://kubsu.ru" title="Главная КубГУ">Ссылка 1</a></li>
+                        <li><a href="https://kubsu.ru/ru/university" title="Образование в КубГУ">Ссылка 2</a></li>
                     </ol>
                 </li>
                 <li><a href="ftp://user:password@://example.com">Ссылка на файл на сервере FTP с авторизацией</a></li>
